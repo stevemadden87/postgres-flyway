@@ -1,0 +1,11 @@
+spring:
+    datasource:
+        password: codewebs
+        url: jdbc:postgresql://35.202.18.54:5432/to_do
+        username: postgres
+    jpa:
+        hibernate:
+            ddl-auto: validate
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
