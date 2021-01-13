@@ -1,14 +1,11 @@
 spring:
     datasource:
-        password: codewebs
-        url: jdbc:postgresql://107.178.210.194/to_do
-        username: postgres
-    jpa:
+        url: jdbc:postgresql:///to_do?cloudSqlInstance=to-do-application-301513:us-central1:to-do-2&socketFactory=com.google.cloud.sql.postgres.SocketFactory&user=postgres&password=codewebs
         hibernate:
             ddl-auto: validate
         properties:
             hibernate:
                 dialect: org.hibernate.dialect.PostgreSQLDialect
-googleApplicationCredentials:=${GOOGLE_APPLICATION_CREDENTIALS}
+
 
 
